@@ -1,4 +1,14 @@
-mylist = [0,1,2,3,4,5,6,7,8,9]
+import datetime
+fecha = datetime.datetime.now()
 
-for x in mylist:
-  print(x)
+print ('Hoy', 'es',fecha.strftime('%d/%m/%Y'))
+
+import socket
+host = socket.gethostname()
+
+print('Mi nombre de host es %s' %host)
+
+print ("voy a Iterar 10 veces")
+for i in range(10):
+    print ("Iteracion:",i)
+print ("fin")
